@@ -667,27 +667,7 @@
       </div>
     </section>
 
-    <section class="sec sec_14" id="Sticker">
-      <div class="con">
-        <div class="img_box glued_sticker">
-          <img src="greendays_imgs/22.Glued Sticker.png" alt="">
-        </div>
-        <div class="img_box roll_sticker">
-          <img src="" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="sec sec_15" >
-      <div class="con">
-        <div class="img_box boximg">
-          <img src="greendays_imgs/23_boximg.png" alt="">
-          <img src="greendays_imgs/6_임시.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="sec sec_16">
+    <section class="sec sec_14">
       <div class="con">
         <div class="img_box">
           <img src="greendays_imgs/16_grapefruit.png" class="grapefruit"alt="">
@@ -700,6 +680,48 @@
         </div>
       </div>
     </section>
+
+    <section class="sec sec_15" id="Sticker">
+      <div class="con">
+        <div class="img_box glued_sticker">
+          <img src="greendays_imgs/22.Glued Sticker.png" alt="">
+        </div>
+        <div class="img_box roll_sticker">
+          <img src="greendays_imgs/22_roll sticker.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_16" >
+      <div class="con">
+        <div class="img_box boximg">
+          <img src="greendays_imgs/23_boximg.png" alt="">
+          <img src="greendays_imgs/6_임시.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_17">
+      <div class="con">
+        <div class="img_box bg_img">
+          <img src="greendays_imgs/17_bg.png" alt="">
+        </div>
+
+        <div class="img_box character_goods">
+          <img src="greendays_imgs/17_임시.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec_18">
+      <div class="con">
+        
+      </div>
+    </section>
+
+    
+
+    
 
     <style>
       /* 노말라이즈 */
@@ -1548,68 +1570,13 @@
       }
 
       .sec_14 .con {
-        overflow: hidden;
-        width: 1920px;
-      }
-
-      .sec_14 .img_box {
-        width: 1440px;
-        height: 950px;
-
-      }
-
-      .sec_14 .glued_sticker {
-        position: absolute;
-        top: -20px;
-        left: 55px;
-        rotate: -4.52deg;
-      }
-      /* 섹션14 끝 */
-
-      /* 섹션15 시작 */
-      .sec_15 {
-        background: url(greendays_imgs/14_bg.png) no-repeat center top /
-          cover;
-      }
-
-      .sec_15 {
-        height: 750px;
-      }
-
-      .sec_15 .img_box {
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .sec_15 .img_box > img:first-child {
-        width: 963px;
-        height: 750px;
-      }
-
-      .sec_15 .img_box > img:last-child {
-        width:487px ;
-        height: 750px;
-      }
-      /* 섹션15 끝 */
-
-      /* 섹션16 시작 */
-      .sec_16 {
-        background: url(greendays_imgs/14_bg.png) no-repeat center top /
-          cover;
-      }
-
-      .sec_16 .con {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
       }
 
-      .sec_16 .con .img_box {
+      .sec_14 .con .img_box {
         position: static; 
         width: 350px;
         height: 490px;
@@ -1622,21 +1589,119 @@
         align-items: center;
       }
 
-      .sec_16 .img_box .grapefruit {
+      /*------------ 임시 -------------*/
+
+      .sec_14 .con .img_box:first-child:hover {
+        background-color: #FDDDD1;
+      }
+
+      .sec_14 .con .img_box:nth-child(2):hover {
+        background-color: #FBF7BF;
+      }
+
+      .sec_14 .con .img_box:last-child:hover {
+        background-color: #e8e5fe;
+      }
+
+      /*------------ 임시 -------------*/
+
+      .sec_14 .img_box .grapefruit {
         width: 160px;
       }
 
-      .sec_16 .img_box .lemon {
+      .sec_14 .img_box .lemon {
         width: 240px;
       }
-      .sec_16 .img_box .lilac {
+      .sec_14 .img_box .lilac {
         width: 163px;
       }
 
-    
+      /* 섹션14 끝 */
+
+      /* 섹션15 시작 */
+      .sec_15 {
+        background: url(greendays_imgs/14_bg.png) no-repeat center top /
+          cover;
+      }
+
+      .sec_15 .con {
+        overflow: hidden;
+        width: 1920px;
+      }
+
+      .sec_15 .glued_sticker {
+        position: absolute;
+        width: 1440px;
+        height: 950px;
+        top: -20px;
+        left: 55px;
+        rotate: -4.52deg;
+      }
+
+      .sec_15 .roll_sticker {
+        width: 1120px;
+        height: 840px;
+        top: 205px;
+        left: auto;
+        right: -10px;
+        rotate: -2.56deg;
+      }
+      /* 섹션15 끝 */
+
+      /* 섹션16 시작 */
+      .sec_16 {
+        background: url(greendays_imgs/14_bg.png) no-repeat center top /
+          cover;
+      }
+
+      .sec_16 {
+        height: 750px;
+      }
+
+      .sec_16 .img_box {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sec_16 .img_box > img:first-child {
+        width: 963px;
+        height: 750px;
+      }
+
+      .sec_16 .img_box > img:last-child {
+        width:487px ;
+        height: 750px;
+      }
       /* 섹션16 끝 */
 
       /* 섹션17 시작 */
+      .sec_17 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .sec_17 .con {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      .sec_17 .bg_img {
+        top:0;
+        left:0;
+        width: 100%;
+      }
+
+      .sec_17 .character_goods {
+        width: 980px;
+        height: 820px;
+        top: -20px;
+        left: 490px;
+        rotate: 20deg;
+      }
       /* 섹션17 끝 */
     </style>
 

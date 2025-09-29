@@ -696,7 +696,10 @@
       <div class="con">
         <div class="img_box boximg">
           <img src="greendays_imgs/23_boximg.png" alt="">
-          <img src="greendays_imgs/6_임시.png" alt="">
+          <div class="img_box txt">
+            <img src="greendays_imgs/16_txt1.png" alt="">
+            <img src="greendays_imgs/16_txt2.png" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -715,7 +718,7 @@
 
     <section class="sec sec_18">
       <div class="con">
-        
+
       </div>
     </section>
 
@@ -1659,23 +1662,40 @@
       }
 
       .sec_16 .img_box {
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
         display: flex;
-        justify-content: center;
+        justify-content: center; /* 가운데 정렬 유지 */
         align-items: center;
       }
 
-      .sec_16 .img_box > img:first-child {
+      .sec_16 .img_box > img {
         width: 963px;
         height: 750px;
       }
 
-      .sec_16 .img_box > img:last-child {
+      .sec_16 .img_box > .txt {
+        background-color: white;
+        position: relative;
         width:487px ;
         height: 750px;
       }
+
+      .sec_16 > .con > .img_box > .txt > img {
+        position: absolute;
+      }
+
+      .sec_16 > .con > .img_box > .txt > img:first-child {
+        width: 260px;
+        height: 380px;
+      }
+
+      .sec_16 > .con > .img_box > .txt > img:last-child {
+        width: 495px;
+        height: 190px;
+      }
+
+
+
+
       /* 섹션16 끝 */
 
       /* 섹션17 시작 */
